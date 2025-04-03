@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio - Seu Nome</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #000;
+}
+}
+    }header {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('sua-imagem.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #0077cc;
+    }
+
+    .projetos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .projeto {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .projeto:hover {
+      transform: scale(1.02);
+    }
+
+    .projeto img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #0077cc, #00aaff);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  background: linear-gradient(135deg, #005fa3, #0099dd);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  background: linear-gradient(135deg, #005fa3, #0099dd);
+}
+
+    .btn:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+    }
+    @keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 119, 204, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(0, 119, 204, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 119, 204, 0);
+  }
+
+#background-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #ffffff;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Clovis e Maria</h1>
+    <p>Agência de design | Criação de conteúdo | Publicitário em formação</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="container">
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+       <p>Somos estudantes de Publicidade e Propaganda e criamos artes, campanhas e ideias fora da caixa.</p>
+      </section>
+
+    <section id="projetos">
+      <h2>Nossos projetos</h2>
+      <div class="projetos">
+        <div class="projeto">
+          <img src="https://via.placeholder.com/400x250" alt="Projeto 1">
+          <h3>Identidade Visual
+        
+          </h3>
+          <p>Criação de identidade visual para marca de garrafa de água.</p>
+          <a href="projeto1.html" class="btn">Ver mais</a>
+        </div>
+        <div class="projeto">
+          <img src="https://via.placeholder.com/400x250" alt="Projeto 2">
+          <h3>Card Game Personalizado</h3>
+          <p>Criação de um baralho divertido e estiloso para jogos de bebida com amigos.</p>
+          <a href="projeto1.html" class="btn">Ver mais</a>
+        </div>
+        <!-- Adicione mais projetos aqui -->
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>📧 Email: seunome@email.com</p>
+      <p>📱 Instagram: <a href="https://instagram.com/seuuser" target="_blank">@seuuser</a></p>
+      <p>💼 LinkedIn: <a href="https://linkedin.com/in/seunome" target="_blank">linkedin.com/in/seunome</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
+  </footer>
+  <canvas id="background-canvas"></canvas>
+
+  <script>
+    const canvas = document.getElementById('background-canvas');
+    const ctx = canvas.getContext('2d');
+    let w, h;
+    let particles = [];
+    
+    function resize() {
+      w = canvas.width = window.innerWidth;
+      h = canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+    
+    for (let i = 0; i < 80; i++) {
+      particles.push({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        radius: Math.random() * 1.5 + 0.5, // menor e mais leve
+        dx: (Math.random() - 0.5) * 0.2,
+        dy: (Math.random() - 0.5) * 0.2
+      });
+    }
+    
+    function animate() {
+      ctx.clearRect(0, 0, w, h);
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.05)'; // cor super clara
+      for (let p of particles) {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fill();
+        p.x += p.dx;
+        p.y += p.dy;
+    
+        if (p.x < 0 || p.x > w) p.dx *= -1;
+        if (p.y < 0 || p.y > h) p.dy *= -1;
+      }
+      requestAnimationFrame(animate);
+    }
+    animate();
+    </script>
+
+</body>
+</html>
